@@ -22,7 +22,7 @@ for f in *.html; do
   [ -e "$f" ] || continue
   found=1
   enc=$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "$f")
-  echo "  https://kazukiotsuka.github.io/static-sites/$enc"
+  echo "  https://thinkxinc.github.io/static-sites/$enc"
 done
 if [ "$found" -eq 0 ]; then
   echo "  HTML ファイルがまだ無い。このフォルダに .html を置いてから再実行する"
